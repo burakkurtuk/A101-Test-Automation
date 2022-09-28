@@ -1,6 +1,6 @@
 Feature: Buy a product testing
 
-  Scenario: Navigate to site and verify if you in correct page
+  Scenario: Navigate to site and verify if on the payment page
 
     Given navigate to url
     And close cookie

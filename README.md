@@ -1,3 +1,6 @@
+
+
+
 Feature: Buy a product testing
 
   Scenario: Navigate to site and verify if you in correct page
@@ -27,3 +30,6 @@ Feature: Buy a product testing
     When click save and continue
     Then verify payment page
     Then quit
+
+
+https://user-images.githubusercontent.com/107056455/192846072-5c570064-b18b-4fb5-a150-8c93cc412eeb.mp4

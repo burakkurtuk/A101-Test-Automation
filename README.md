@@ -32,4 +32,6 @@ Feature: Buy a product testing
     Then quit
 
 
+Let's do it
+
 https://user-images.githubusercontent.com/107056455/192846072-5c570064-b18b-4fb5-a150-8c93cc412eeb.mp4

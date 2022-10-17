@@ -30,13 +30,7 @@ public class testSteps {
 
     }
 
-    @Given("close cookie")
-    public void close_cookie() throws InterruptedException {
-        homePage.clickCookieCloseButton();
 
-        log.info("Cookies are closed");
-
-    }
 
     @Given("move from clothing and accessories to knee high socks")
     public void move_from_clothing_and_accessories_to_knee_high_socks() {

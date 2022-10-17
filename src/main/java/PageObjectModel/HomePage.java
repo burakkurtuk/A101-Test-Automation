@@ -19,12 +19,6 @@ public class HomePage extends BaseFunctions {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "(//button[@class='CybotCookiebotDialogBodyButton'])[2]")
-    private WebElement cookieCloseButton;
-
-    public void clickCookieCloseButton() throws InterruptedException {
-        click(cookieCloseButton);
-    }
 
     @FindBy(css = "a[title='Dizaltı Çorap']")
     private WebElement fromCategoriesToKneeHighSocks;

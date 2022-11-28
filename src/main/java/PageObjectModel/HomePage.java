@@ -19,6 +19,12 @@ public class HomePage extends BaseFunctions {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(css = "button[id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")
+    private WebElement cookieElement;
+
+    public void acceptCookie(){
+        click(cookieElement);
+    }
 
     @FindBy(css = "a[title='Dizaltı Çorap']")
     private WebElement fromCategoriesToKneeHighSocks;
@@ -26,7 +32,6 @@ public class HomePage extends BaseFunctions {
     public void moveToClothesAndAccessoires() {
 
         Actions actions = new Actions(driver);
-
         List<WebElement> menuBar = driver.findElements(By.cssSelector(".desktop-menu>li"));
         actions.moveToElement(menuBar.get(3)).perform();
         click(fromCategoriesToKneeHighSocks);

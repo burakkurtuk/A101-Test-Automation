@@ -97,7 +97,10 @@ public class AddressAndShippingPage extends BaseFunctions {
     @FindBy(xpath = "(//button[@type='submit'])[1]")
     private WebElement saveAndContinueElement;
 
-    public void saveAndContinue() {
+    public void saveAndContinue() throws InterruptedException {
+        waitFor(1500);
+        click(saveAndContinueElement);
+        waitFor(3000);
         click(saveAndContinueElement);
     }
 

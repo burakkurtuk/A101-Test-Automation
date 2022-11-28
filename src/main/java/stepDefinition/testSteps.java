@@ -3,6 +3,7 @@ package stepDefinition;
 import PageObjectModel.AddressAndShippingPage;
 import PageObjectModel.HomePage;
 import PageObjectModel.ProductDetailPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,7 +32,12 @@ public class testSteps {
     }
 
 
+    @Given("accept cookie")
+    public void closeCookie() {
+        homePage.acceptCookie();
 
+        log.info("Cookie is closed");
+    }
     @Given("move from clothing and accessories to knee high socks")
     public void move_from_clothing_and_accessories_to_knee_high_socks() {
         homePage.moveToClothesAndAccessoires();
@@ -156,7 +162,7 @@ public class testSteps {
     }
 
     @When("click save and continue")
-    public void click_save_and_continue() {
+    public void click_save_and_continue() throws InterruptedException {
         addressAndShippingPage.saveAndContinue();
 
         log.info("Clicked save and continue button");
@@ -165,10 +171,14 @@ public class testSteps {
     @Then("verify payment page")
     public void verify_payment_page() {
         addressAndShippingPage.verifyPaymentPage();
+
+        log.info("Payment page verified");
     }
 
     @Then("quit")
     public void quit() {
         driver.quit();
     }
+
+
 }

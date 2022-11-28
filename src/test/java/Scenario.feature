@@ -3,6 +3,7 @@ Feature: Buy a product testing
   Scenario: Navigate to site and verify if on the payment page
 
     Given navigate to url
+    And accept cookie
     And move from clothing and accessories to knee high socks
     And filter product
     And choose product

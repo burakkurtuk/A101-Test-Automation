@@ -35,13 +35,12 @@ public class testSteps {
     @Given("accept cookie")
     public void closeCookie() {
         homePage.acceptCookie();
-
         log.info("Cookie is closed");
     }
     @Given("move from clothing and accessories to knee high socks")
     public void move_from_clothing_and_accessories_to_knee_high_socks() {
         homePage.moveToClothesAndAccessoires();
-
+        homePage.closeCookie();
         log.info("Moved from clothing & accessories to knee high socks");
     }
 

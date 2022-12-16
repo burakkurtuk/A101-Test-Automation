@@ -100,8 +100,7 @@ public class AddressAndShippingPage extends BaseFunctions {
     public void saveAndContinue() throws InterruptedException {
         waitFor(1500);
         click(saveAndContinueElement);
-        waitFor(3000);
-        click(saveAndContinueElement);
+
     }
 
     @FindBy(xpath = "(//div[@class='section-hero'])[5]")

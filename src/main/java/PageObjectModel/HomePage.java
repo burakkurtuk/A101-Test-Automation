@@ -25,12 +25,6 @@ public class HomePage extends BaseFunctions {
     public void acceptCookie(){
         click(cookieElement);
     }
-    @FindBy(css = "div.closePopuppersonaNewUser")
-    private WebElement closeCookieElement;
-
-    public void closeCookie(){
-        click(closeCookieElement);
-    }
 
     @FindBy(css = "a[title='Dizaltı Çorap']")
     private WebElement fromCategoriesToKneeHighSocks;

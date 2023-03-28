@@ -24,9 +24,7 @@ public class testSteps {
     @Given("navigate to url")
     public void navigate_to_url() {
         driver = Driver.getDriver();
-        driver.manage().window().maximize();
         driver.get("https://www.a101.com.tr/");
-
         log.info("Navigated to url");
 
     }
